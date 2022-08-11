@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Expenses chart component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,28 +16,59 @@
 </head>
 <body>
 
-  My balance
-  $921.48
+  <main>
 
-  Spending - Last 7 days
+    <div class="balance">
+      <h1><span>My balance</span><br> $921.48</h1>
+      <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+    </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <div class="chart">
+      <h2> Spending - Last 7 days </h2>
+      <div class="main-chart">
 
-  Total this month
-  $478.33
+        <div class="mon">
+          <div></div>
+          <span>mon</span>
+        </div>
+        <div class="tue">
+          <div></div>
+          <span>tue</span>
+        </div>
+        <div class="wed">
+          <div></div>
+          <span>wed</span>
+        </div>
+        <div class="thur">
+          <div></div>
+          <span>thur</span>
+        </div>
+        <div class="fri">
+          <div></div>
+          <span>fri</span>
+        </div>
+        <div class="sat">
+          <div></div>
+          <span>sat</span>
+        </div>
+        <div class="sun">
+          <div></div>
+          <span>sun</span>
+        </div>
 
-  +2.4%
-  from last month
+      </div>
+      <hr>
+      <div class="total">
+        <h1> <span>  Total this month</span><br>$478.33</h1>
+        <h4>  +2.4% <br><span> from last month</span></h4>
+      </div>
+    </div>
+
+  </main>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

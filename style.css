@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+/* DESKTOP STYLES */
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(33, 100%, 98%);
+}
+
+main{
+    width: 500px;
+    height: auto;
+    /* background: blue; */
+    border-radius: 15px 15px ;
+}
+
+/* Begin Balance styles */
+.balance{
+    background: hsl(10, 79%, 65%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+.balance h1{
+    color: white;
+    font-weight: 700;
+}
+.balance h1 span{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* End Balance styles */
+
+/* begin chart styles */
+
+.chart{
+    margin-top: 10px;
+    padding: 30px;
+    background: white;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.chart h2{
+    color: hsl(25, 47%, 15%);
+}
+.main-chart{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mon, .tue, .wed, .thur, .fri, .sat, .sun{
+    align-self: flex-end;
+}
+.mon div{
+    width: 35px;
+    height: 1.7em;
+    background: hsl(10, 79%, 65%);
+    border-radius: 3px;
+}
+.tue div{
+    width: 35px;
+    height: 5em;
+    background: hsl(10, 79%, 65%);
+    border-radius: 3px;
+}
+.wed div{
+    width: 35px;
+    height: 7em;
+    background: hsl(186, 34%, 60%);
+    border-radius: 3px;
+}
+.thur div{
+    width: 35px;
+    height: 4em;
+    background: hsl(10, 79%, 65%);
+    border-radius: 3px;
+}
+.fri div{
+    width: 35px;
+    height: 3em;
+    background: hsl(10, 79%, 65%);
+    border-radius: 3px;
+}
+.sat div{
+    width: 35px;
+    height: 6em;
+    background: hsl(10, 79%, 65%);
+    border-radius: 3px;
+}
+.sun div{
+    width: 35px;
+    height: 3.5em;
+    background: hsl(10, 79%, 65%);
+    border-radius: 3px;
+}
+/* End chart styles */
+hr{
+   color: hsl(33, 100%, 98%);
+}
+/* Begin Total styles */
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.total h1{
+    font-size: 3em;
+    color: hsl(25, 47%, 15%);
+}
+.total h1 span, .total h4 span{
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(28, 10%, 53%);
+}
+.total h4{
+    text-align: end;
+    color: hsl(25, 47%, 15%);
+}
+/* End Total styles */
+
+
+
+/* MOBILE STYLES */
+@media only screen and (min-width: 300px ) and (max-width: 600px), only screen and (min-device-width: 300px) and (max-device-width: 600px){
+
+}
