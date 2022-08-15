@@ -11,11 +11,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: hsl(33, 100%, 98%);
+    background:  hsl(27, 66%, 92%);
 }
 
 main{
-    width: 500px;
+    width: 400px;
     height: auto;
     /* background: blue; */
     border-radius: 15px 15px ;
@@ -27,16 +27,20 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 10px 20px;
+    /* padding: 12px 30px; */
+    border-radius: 20px;
 }
 .balance h1{
     color: white;
     font-weight: 700;
+    font-size: 1.9em;
+    line-height: 1.2em;
 }
 .balance h1 span{
     font-size: 18px;
     font-weight: 400;
+    color: hsl(27, 66%, 92%);
 }
 /* End Balance styles */
 
@@ -44,69 +48,93 @@ main{
 
 .chart{
     margin-top: 10px;
-    padding: 30px;
+    padding: 20px;
     background: white;
-    min-height: 60vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 .chart h2{
     color: hsl(25, 47%, 15%);
+    font-weight: 700;
 }
 .main-chart{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 50px;
+}
+.chart-price{
+    position: absolute;
+    top: -45px;
+    background: hsl(25, 47%, 15%);
+    color: white !important;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: none;
 }
 .mon, .tue, .wed, .thur, .fri, .sat, .sun{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     align-self: flex-end;
 }
+.mon span, .tue span, .wed span, .thur span, .fri span, .sat span, .sun span{
+    color: hsl(28, 10%, 53%);
+    margin-top: 5px;
+}
 .mon div{
-    width: 35px;
+    width: 40px;
     height: 1.7em;
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
 .tue div{
-    width: 35px;
+    width: 40px;
     height: 5em;
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
 .wed div{
-    width: 35px;
+    width: 40px;
     height: 7em;
     background: hsl(186, 34%, 60%);
     border-radius: 3px;
 }
 .thur div{
-    width: 35px;
+    width: 40px;
     height: 4em;
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
 .fri div{
-    width: 35px;
+    width: 40px;
     height: 3em;
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
 .sat div{
-    width: 35px;
+    width: 40px;
     height: 6em;
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
 .sun div{
-    width: 35px;
+    width: 40px;
     height: 3.5em;
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
 /* End chart styles */
 hr{
-   color: hsl(33, 100%, 98%);
+   height: 2px;
+   border: none;
+   margin-top: 20px;
+   background-color: #eee;
+
 }
 /* Begin Total styles */
 .total{
@@ -115,7 +143,8 @@ hr{
     align-items: flex-end;
 }
 .total h1{
-    font-size: 3em;
+    font-size: 2.5em;
+    line-height: 0.9em;
     color: hsl(25, 47%, 15%);
 }
 .total h1 span, .total h4 span{
@@ -133,5 +162,24 @@ hr{
 
 /* MOBILE STYLES */
 @media only screen and (min-width: 300px ) and (max-width: 600px), only screen and (min-device-width: 300px) and (max-device-width: 600px){
-
+    main{
+        width: 350px;
+        height: auto;
+        border-radius: 15px 15px ;
+    }
+    .balance h1{
+        font-size: 1.9em;
+    }
+    .total h1{
+        font-size: 2em;
+    }
+    .mon div, .tue div, .wed div, .thur div, .fri div, .sat div, .sun div{
+      width: 30px;
+    }
+    .total{
+        margin-top: 30px;
+    }
+    /* .chart-price{
+        padding: 5px;
+    } */
 }
