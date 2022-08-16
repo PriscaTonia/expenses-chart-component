@@ -9,16 +9,17 @@
 body{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background:  hsl(27, 66%, 92%);
+    position: relative;
 }
 
 main{
     width: 400px;
     height: auto;
-    /* background: blue; */
-    border-radius: 15px 15px ;
+    border-radius: 20px 20px ;
 }
 
 /* Begin Balance styles */
@@ -179,7 +180,7 @@ hr{
     .total{
         margin-top: 30px;
     }
-    /* .chart-price{
-        padding: 5px;
-    } */
+   .chart-price{
+    padding: 5px;
+   }
 }
