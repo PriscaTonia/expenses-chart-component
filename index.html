@@ -1,84 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution{position: absolute; bottom: 0;}
-    .attribution { font-size: 14px; text-align: center; }
-    .attribution a { color: hsl(10, 79%, 65%); }
-  </style>
-</head>
-<body>
-
-  <main>
-
-    <div class="balance">
-      <h1><span>My balance</span><br> $921.48</h1>
-      <svg width="50" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
-    </div>
-
-    <div class="chart">
-      <h2> Spending - Last 7 days </h2>
-      <div class="main-chart">
-
-        <div class="mon chart-box" id="mon">
-          <span class="chart-price" ></span>
-          <div></div>
-          <span>mon</span>
-        </div>
-        <div class="tue chart-box"  id="tue">
-          <span class="chart-price" ></span>
-          <div></div>
-          <span>tue</span>
-        </div>
-        <div class="wed chart-box" id="wed">
-          <span class="chart-price"></span>
-          <div></div>
-          <span>wed</span>
-        </div>
-        <div class="thur chart-box" id="thu">
-          <span class="chart-price"></span>
-          <div></div>
-          <span>thur</span>
-        </div>
-        <div class="fri chart-box" id="fri">
-          <span class="chart-price"></span>
-          <div></div>
-          <span>fri</span>
-        </div>
-        <div class="sat chart-box" id="sat">
-          <span class="chart-price"></span>
-          <div></div>
-          <span>sat</span>
-        </div>
-        <div class="sun chart-box" id="sun">
-          <span class="chart-price"></span>
-          <div></div>
-          <span>sun</span>
-        </div>
-
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 0;
+      }
+      .attribution {
+        font-size: 14px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(10, 79%, 65%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Balance Section -->
+      <div class="balance">
+        <h1>
+          <span>My balance</span><br />
+          $921.48
+        </h1>
+        <svg
+          width="50"
+          height="48"
+          viewBox="0 0 72 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#382314" cx="48" cy="24" r="24" />
+            <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+          </g>
+        </svg>
       </div>
-      <hr>
-      <div class="total">
-        <h1> <span>  Total this month</span><br>$478.33</h1>
-        <h4>  +2.4% <br><span> from last month</span></h4>
-      </div>
-    </div>
 
-  </main>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Onwudebelu Prisca Ebubechukwu</a>.
-  </div>
-  <script type="text/javascript" src="data.json"></script>
-  <script src="./script.js"></script>
-</body>
+      <!-- Chart Section -->
+      <div class="chart">
+        <h2>Spending - Last 7 days</h2>
+        <div class="main-chart">
+          <!-- Mon -->
+          <div class="mon chart-box" id="mon">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>mon</span>
+          </div>
+          <!-- Tue -->
+          <div class="tue chart-box" id="tue">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>tue</span>
+          </div>
+          <!-- Wed -->
+          <div class="wed chart-box" id="wed">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>wed</span>
+          </div>
+          <!-- Thur -->
+          <div class="thur chart-box" id="thu">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>thur</span>
+          </div>
+          <!-- Fri -->
+          <div class="fri chart-box" id="fri">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>fri</span>
+          </div>
+          <!-- Sat -->
+          <div class="sat chart-box" id="sat">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>sat</span>
+          </div>
+          <!-- Sun -->
+          <div class="sun chart-box" id="sun">
+            <span class="chart-price"></span>
+            <div></div>
+            <span>sun</span>
+          </div>
+        </div>
+        <hr />
+        <!-- Total display Section -->
+        <div class="total">
+          <h1><span> Total this month</span><br />$478.33</h1>
+          <h4>+2.4% <br /><span> from last month</span></h4>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Onwudebelu Prisca Ebubechukwu</a>.
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
