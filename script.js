@@ -44,6 +44,7 @@ let getCurrentDay = (dayList) => {
   const weekday = ["sun", "mon", "tue", "wed", "thur", "fri", "sat"];
   const d = new Date();
   let day = weekday[d.getDay()];
+  console.log(d.getDay())
 
   dayList.forEach((currentDay) => {
     if (currentDay.id === day) {

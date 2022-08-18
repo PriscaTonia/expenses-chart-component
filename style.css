@@ -84,6 +84,7 @@ main{
     align-self: flex-end;
     cursor: pointer;
 }
+
 .mon span, .tue span, .wed span, .thur span, .fri span, .sat span, .sun span{
     color: hsl(28, 10%, 53%);
     margin-top: 5px;
@@ -107,9 +108,7 @@ main{
     background: hsl(10, 79%, 65%);
     border-radius: 3px;
 }
-.current-day div{
-    background: hsl(186, 34%, 60%);
-}
+
 .thur div{
     width: 40px;
     /* height: 4em; */
@@ -136,6 +135,9 @@ main{
 }
 .mon div:hover, .tue div:hover, .wed div:hover, .thur div:hover, .fri div:hover, .sat div:hover, .sun div:hover{
     opacity: 0.6;
+}
+.current-day div{
+    background: hsl(186, 34%, 60%);
 }
 /* End chart styles */
 hr{
