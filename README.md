@@ -50,7 +50,7 @@ Users should be able to:
 - Desktop-first workflow
 - Javascript
 
-I was able to 
+I was able to achieve all the challenges stated above, The current day displays a different color from the other days, the height of the charts are based on the amount and is dynamically gotten from the json file. The hover states are displayed for all interactive elements and the component is fully responsive based on screen size.
 
 ### What I learned
 
@@ -59,7 +59,7 @@ During the course of building this project, I really learnt a lot about css resp
 
 ### Continued development
 
-I obviously still have a lot to learn in javascript, and I hope I could get to apply more smooth css styles and work with Javascript frame works.
+I obviously still have a lot to learn in javascript, and I hope I could get to apply more smooth and responsive css styles and work with Javascript frame works.
 
 ### Useful resources
 
@@ -70,7 +70,6 @@ I obviously still have a lot to learn in javascript, and I hope I could get to a
 - Frontend Mentor - [@PriscaTonia](https://www.frontendmentor.io/profile/PriscaTonia)
 - Twitter - [@EbubePrisca](https://twitter.com/EbubePrisca)
 
-
 ## Acknowledgments
 
-I'd love to acknowledge Elliot Yibaebi Yibalua, he actually helped me with getting my data from the json file as well as some code breaks I encountered.
+I'd love to acknowledge a dear person, Elliot Yibaebi Yibalua, he actually helped me with getting my data from the json file as well as some code breaks I encountered. As well as continually encouraging my growth and development.
